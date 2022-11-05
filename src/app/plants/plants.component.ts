@@ -1,11 +1,12 @@
 import { PlantsService } from './plants.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Plants } from './plants';
 
 @Component({
   selector: 'app-plants',
   templateUrl: './plants.component.html',
-  styleUrls: ['./plants.component.css']
+  styleUrls: ['./plants.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PlantsComponent implements OnInit {
   plants: Array<Plants> = [];
