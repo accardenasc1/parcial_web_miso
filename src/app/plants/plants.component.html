@@ -1,26 +1,43 @@
-<p>
-  plants works!
-</p>
 <div class="container-fluid">
+  <h1><b>Vivero El Otoño</b></h1>
+  <hr>
+  <img src="../../assets/img.PNG" alt="Fondo">
+  <hr>
   <div class="col-6">
-    <table class="table">
-      <thead>
+    <table class="table table-sm">
+      <thead class="table-dark">
         <tr>
-          <th class="h4">Comun Name</th>
-          <th class="h4">Clima</th>
-          <th class="h4">Tipo</th>
+          <th class="h6">#</th>
+          <th class="h6">Nombre Comun</th>
+          <th class="h6">Nombre Cientifico</th>
+          <th class="h6">Tipo</th>
+          <th class="h6">Altura Maxima</th>
+          <th class="h6">Clima</th>
+          <th class="h6">Sustrato Siembra</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let plant of plants">
           <td>
-            <dd>{{plant.comunName}}</dd>
+            <dd><b>{{plant.id}}</b></dd>
+          </td>
+          <td>
+            <dd>{{plant.nombre_comun}}</dd>
+          </td>
+          <td>
+            <dd>{{plant.nombre_cientifico}}</dd>
+          </td>
+          <td>
+            <dd>{{plant.tipo}}</dd>
+          </td>
+          <td>
+            <dd>{{plant.altura_maxima}}</dd>
           </td>
           <td>
             <dd>{{plant.clima}}</dd>
           </td>
           <td>
-            <dd>{{plant.type}}</dd>
+            <dd>{{plant.sustrato_siembra}}</dd>
           </td>
         </tr>
       </tbody>
